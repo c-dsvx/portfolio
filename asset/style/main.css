@@ -341,12 +341,29 @@ footer.colophon {
   border-top: 2px solid var(--ink);
   margin-top: 4px;
   padding: 36px 0 64px;
-  display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end;
+  display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center;
 }
-.colophon .cta { font-family: var(--serif); font-size: clamp(24px, 3.4vw, 34px); font-weight: 500; line-height: 1.2; letter-spacing: -0.01em; margin: 0; max-width: 16ch; }
+.colophon .cta { font-family: var(--serif); font-size: clamp(24px, 3.4vw, 34px); font-weight: 500; line-height: 1; letter-spacing: -0.01em; margin: 0; max-width: 16ch; }
 .colophon .cta a { color: var(--ink); border-bottom: 2px solid var(--accent); }
 .colophon .cta a:hover { color: var(--accent); }
-.colophon .fine { font-family: var(--mono); font-size: 11.5px; color: var(--ink-faint); line-height: 1.7; text-align: right; }
+.colophon .fine { 
+  font-family: var(--mono); 
+  font-size: 11.5px; color: 
+  var(--ink-faint); 
+  line-height: 1.7; 
+  text-align: right; 
+  
+  p span {
+    display: block;
+  }
+}
+
+.cta {
+  p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+}
 
 /* responsive */
 @media (max-width: 900px) {

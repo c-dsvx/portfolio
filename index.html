@@ -9,6 +9,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="asset/style/main.css" />
+
+  <script src="asset/js/meta-row.js" defer></script>
+  <script src="asset/js/scrollspy.js" defer></script>
+  <script src="asset/js/toc-mobile.js" defer></script>
 </head>
 
 <body data-justify="off">
@@ -33,7 +37,7 @@
     </div>
 
     <div class="meta-row">
-      <a href="/cdn-cgi/l/email-protection#8de8e1e2e9e4e8a3e0ecffeee5ece3e9cde8f5ece0fde1e8a3e8e9f8"><span class="__cf_email__" data-cfemail="c9aca5a6ada0ace7a4a8bbaaa1a8a7ad89acb1a8a4b9a5ace7acadbc">[email&#160;protected]</span></a>
+      <a href="mailto:">adresse@mail.com</a>
       <a href="#">Google&nbsp;Scholar</a>
       <a href="#">ORCID</a>
       <a href="#">Curriculum&nbsp;Vitae&nbsp;(PDF)</a>
@@ -269,68 +273,17 @@
 
   <div class="shell">
     <footer class="colophon">
-      <p class="cta">Get in touch — <a href="/cdn-cgi/l/email-protection#3550595a515c501b585447565d545b5175504d54584559501b505140">say&nbsp;hello</a>.</p>
+      <div class="cta">
+        <p>Get in touch —</p>
+        <a href="mailto:">say hello</a>
+      </div>
       <div class="fine">
-        Chloé DESVAUX · University of Bordeaux<br />
-        Designed for clarity · Set in Newsreader &amp; IBM Plex Mono<br />
-        © 2026
+        <p>Chloé DESVAUX · University of Bordeaux
+        <span>Designed for clarity · Set in Newsreader &amp; IBM Plex Mono</span>
+        © 2026</p>
       </div>
     </footer>
   </div>
-
-  <!-- portrait drop target -->
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="image-slot.js"></script>
-
-  <script src="asset/js/meta-row.js"></script>
-  <script src="asset/js/scrollspy.js"></script>
-  <script src="asset/js/toc-mobile.js"></script>
-
-  <!-- Tweaks panel -->
-  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-  <script type="text/babel" src="tweaks-panel.jsx"></script>
-  <script type="text/babel">
-    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-      "accent": "oklch(0.43 0.11 25)",
-      "bodyFont": "Sans",
-      "justify": false
-    }/*EDITMODE-END*/;
-
-    function App() {
-      const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
-      React.useEffect(() => {
-        const r = document.documentElement;
-        r.style.setProperty('--accent', t.accent);
-        r.style.setProperty('--body-font', t.bodyFont === 'Sans' ? 'var(--sans)' : 'var(--serif)');
-        document.body.setAttribute('data-justify', t.justify ? 'on' : 'off');
-      }, [t]);
-
-      return (
-        <TweaksPanel title="Tweaks">
-          <TweakSection label="Accent" />
-          <TweakColor label="Link colour" value={t.accent}
-            options={[
-              'oklch(0.45 0.09 245)',
-              'oklch(0.43 0.11 25)',
-              'oklch(0.43 0.06 155)',
-              'oklch(0.30 0.012 70)'
-            ]}
-            onChange={(v) => setTweak('accent', v)} />
-          <TweakSection label="Typography" />
-          <TweakRadio label="Body typeface" value={t.bodyFont}
-            options={['Serif', 'Sans']}
-            onChange={(v) => setTweak('bodyFont', v)} />
-          <TweakToggle label="Justify body text" value={t.justify}
-            onChange={(v) => setTweak('justify', v)} />
-        </TweaksPanel>
-      );
-    }
-
-    const host = document.createElement('div');
-    document.body.appendChild(host);
-    ReactDOM.createRoot(host).render(<App />);
-  </script>
 
 </body>
 </html>
