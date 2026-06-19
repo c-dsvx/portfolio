@@ -35,6 +35,51 @@ body[data-justify="on"] .prose p {
   hyphens: auto;
 }
 
+/* modale poster */
+.pdf-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.pdf-modal.active {
+  display: flex;
+}
+
+.pdf-modal-content {
+  position: relative;
+  width: 95vw;
+  height: 95vh;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pdf-modal-content iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.pdf-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  z-index: 2;
+  border: none;
+  background: #111;
+  color: white;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
 a { color: var(--accent); text-decoration: none; }
 .prose a { text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 0.5px; text-decoration-color: color-mix(in oklch, var(--accent) 45%, transparent); }
 a:hover { text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 0.5px; }
@@ -76,8 +121,21 @@ a:hover { text-decoration: underline; text-underline-offset: 2px; text-decoratio
 
 .img_portrait {
   display: flex;
+  width: 200px;
+  height: 250px;
   flex-direction: column;
   align-items: center;
+
+  .portrait {
+  width: 100%;
+  height: 100%;
+  display: block;  
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--rule-strong);
+  background-color: oklch(0.965 0.004 95);
+  background-image: repeating-linear-gradient(135deg, transparent 0 9px, oklch(0.93 0.005 90) 9px 10px);
+}
 }
 
 h1.name {
@@ -106,15 +164,7 @@ h1.name {
   max-width: 34ch;
   font-weight: 400;
 }
-.portrait {
-  width: clamp(132px, 17vw, 176px);
-  height: clamp(168px, 22vw, 224px);
-  display: block;
-  filter: grayscale(0.12);
-  border: 1px solid var(--rule-strong);
-  background-color: oklch(0.965 0.004 95);
-  background-image: repeating-linear-gradient(135deg, transparent 0 9px, oklch(0.93 0.005 90) 9px 10px);
-}
+
 .portrait-cap { margin-top: 8px; max-width: 176px; line-height: 1.4; }
 
 .meta-row {

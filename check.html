@@ -13,6 +13,7 @@
   <script src="asset/js/meta-row.js" defer></script>
   <script src="asset/js/scrollspy.js" defer></script>
   <script src="asset/js/toc-mobile.js" defer></script>
+  <script src="asset/js/pdf-modal.js" defer></script>
 </head>
 
 <body data-justify="off">
@@ -31,8 +32,7 @@
         <p class="role">I develop and evaluate school interventions that promote <span style="font-style: italic; color: var(--ink)">curiosity-driven learning</span> in primary to middle school children — by leveraging metacognition and participatory design with teachers.</p>
       </div>
       <div class="img_portrait">
-        <image-slot id="portrait" class="portrait" shape="rounded" radius="3" placeholder="Drop a portrait"></image-slot>
-        <p class="eyebrow portrait-cap">Photo placeholder — drag in a portrait (suppress when done)</p>
+        <img id="portrait" class="portrait" shape="rounded" radius="3" placeholder="Portrait de Chloé Desvaux" src="./asset/img/coca2.png"></img>
       </div>
     </div>
 
@@ -40,7 +40,7 @@
       <a href="mailto:chloe.desvaux@inria.fr">chloe.desvaux@inria.fr</a>
       <a href="mailto:chloe.desvaux@u-bordeaux.fr">chloe.desvaux@u-bordeaux.fr</a>
       <a href="https://www.linkedin.com/in/chlo%C3%A9-desvaux-535409224/" target="_blank">LinkedIn</a>
-      <a href="#" target="_blank">Curriculum&nbsp;Vitae&nbsp;(PDF)</a>
+      <a href="./asset/pdf/desvaux_cv.pdf" class="pdf-link" target="_blank">Curriculum&nbsp;Vitae&nbsp;(PDF)</a>
     </div>
   </section>
 
@@ -147,7 +147,7 @@
                 <p class="pub-title">Curiosity and Metacognition: Towards a Unified Framework for Learning and Education in the Age of AI</p>
                 <p class="pub-authors"><span class="me">Desvaux, C.</span>, Abdelghani, R., Sauzéon, H. &amp; Oudeyer, P.-Y.</p>
                 <p class="pub-venue">In J. Lockman &amp; A. Warlaumont (Eds.), <span style="font-style: italic">Advances in Child Development and Behavior</span> · Under publication</p>
-                <div class="pub-links"><a href="https://arxiv.org/pdf/2604.25648" target="_blank">Pre-print</a></div>
+                <div class="pub-links"><a href="https://arxiv.org/pdf/2604.25648" class="pdf-link" target="_blank">Pre-print</a></div>
               </div>
             </li>
             <li>
@@ -156,7 +156,9 @@
                 <p class="pub-title">Teaching Students to Question the Machine: An AI Literacy Intervention Improves Students Regulation of LLM Use in a Science Task</p>
                 <p class="pub-authors">Clerc, O., Abdelghani, R., <span class="me">Desvaux, C.</span>, Poisson, E., Oudeyer, P.-Y., &amp; Sauzéon, H.</p>
                 <p class="pub-venue">ALIT4ALL, AIED'26 · Seoul, KR</p>
-                <div class="pub-links"><a href="https://arxiv.org/pdf/2604.01955" target="_blank">Pre-print</a></div>
+                <div class="pub-links">
+                  <a href="https://arxiv.org/pdf/2604.01955" class="pdf-link" target="_blank">Pre-print</a>
+                </div>
               </div>
             </li>
             <li>
@@ -165,7 +167,9 @@
                 <p class="pub-title">Interactive environments for training children's curiosity through the practice of metacognitive skills: A pilot study</p>
                 <p class="pub-authors">Abdelghani, R., Law, E., <span class="me">Desvaux, C.</span>, Oudeyer, P.-Y., &amp; Sauzéon, H.</p>
                 <p class="pub-venue">IDC'23, 495–501</p>
-                <div class="pub-links"><a href="https://doi.org/10.1145/3585088.3593880" target="_blank">DOI</a></div>
+                <div class="pub-links">
+                  <a href="https://doi.org/10.1145/3585088.3593880" target="_blank">DOI</a>
+                </div>
               </div>
             </li>
           </ol>
@@ -198,7 +202,12 @@
               <div class="e-year">2024</div>
               <div class="e-main">
                 <div class="e-title">Kids Reflect: a digital metacognitive training for curiosity-driven learning</div>
-                <div class="e-sub"><span class="me">Desvaux, C.</span>, Abdelghani, R., Sauzéon, H. &amp; Oudeyer, P.-Y. · Scientific Seminar for Junior Researchers in Education · 3–5 July · CNRS UMR7295, Poitiers, FR</div>
+                <div class="e-sub">
+                  <p><span class="me">Desvaux, C.</span>, Abdelghani, R., Sauzéon, H. &amp; Oudeyer, P.-Y. · Scientific Seminar for Junior Researchers in Education · 3–5 July · CNRS UMR7295, Poitiers, FR</p>
+                </div>
+                <div class="pub-links">
+                  <a href="./asset/pdf/desvaux_poster.pdf" class="pdf-link" target="_blank">Voir</a>
+                </div>
               </div>
             </li>
           </ul>
@@ -304,5 +313,17 @@
     </footer>
   </div>
 
+  <!-- poster modale -->
+  <div class="pdf-modal" id="pdfModal">
+    <div class="pdf-modal-content">
+      <button class="pdf-modal-close" id="pdfModalClose">×</button>
+
+      <iframe 
+        id="pdfFrame" 
+        src="" 
+        title="PDF Viewer"
+      ></iframe>
+    </div>
+  </div>
 </body>
 </html>
