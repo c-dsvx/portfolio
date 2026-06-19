@@ -307,6 +307,16 @@ section.block:first-of-type { padding-top: 28px; }
   letter-spacing: -0.012em;
   line-height: 1.1; margin: 0;
 }
+.block-sub + .block-sub { margin-top: 48px; }
+.block-head + .block-sub { margin-top: 36px; }
+.block-sub h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(22px, 2.6vw, 26px);
+  letter-spacing: -0.012em;
+  line-height: 1.25;
+  margin: 0 0 16px;
+}
 
 .prose p { margin: 0 0 18px; }
 .prose p:last-child { margin-bottom: 0; }
