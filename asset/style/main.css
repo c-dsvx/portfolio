@@ -358,10 +358,8 @@ ol.pubs li:first-child { padding-top: 4px; }
   transition: all .15s;
 }
 .pub-links a:hover { color: var(--paper); background: var(--ink); border-color: var(--ink); }
-.tag {
-  font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;
-  color: var(--accent); border: 1px solid color-mix(in oklch, var(--accent) 40%, var(--rule));
-  padding: 2px 7px; border-radius: 2px; margin-left: 8px; vertical-align: 2px; white-space: nowrap;
+.pub-doi {
+  display: none;
 }
 
 /* generic entry list (conferences, teaching) */
@@ -426,6 +424,9 @@ footer.colophon {
 @media (max-width: 900px) {
   .layout { grid-template-columns: 1fr; gap: 0; }
   body { font-size: 18px; }
+  .pub-links { display: none; }
+  .pub-links p {display: block;}
+  .pub-doi {display: block;}
 
   aside.toc {
     position: fixed;
