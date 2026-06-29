@@ -13,6 +13,7 @@
   <script src="asset/js/meta-row.js" defer></script>
   <script src="asset/js/scrollspy.js" defer></script>
   <script src="asset/js/toc-mobile.js" defer></script>
+  <script src="asset/js/pdf-modal.js" defer></script>
 </head>
 
 <body data-justify="off">
@@ -26,21 +27,20 @@
   <section class="shell masthead hero" aria-label="Introduction">
     <div class="masthead-grid">
       <div class="presentation_text">
-        <span class="eyebrow">PhD Candidate · Self-Regulated Learning</span>
+        <span class="eyebrow">PhD Candidate · Curiosity &amp; Metacognition</span>
         <h1 class="name">Chloé DESVAUX</h1>
-        <p class="role">I study how learners <span style="font-style: italic; color: var(--ink)">plan, monitor and adapt</span> their own learning — and how classrooms can be designed to support it.</p>
+        <p class="role">I develop and evaluate school interventions that promote <span style="font-style: italic; color: var(--ink)">curiosity-driven learning</span> in primary to middle school children — by leveraging metacognition and participatory design with teachers.</p>
       </div>
       <div class="img_portrait">
-        <image-slot id="portrait" class="portrait" shape="rounded" radius="3" placeholder="Drop a portrait"></image-slot>
-        <p class="eyebrow portrait-cap">Photo placeholder — drag in a portrait (suppress when done)</p>
+        <img id="portrait" class="portrait" shape="rounded" radius="3" placeholder="Portrait de Chloé Desvaux" src="./asset/img/chlo.webp"></img>
       </div>
     </div>
 
     <div class="meta-row">
-      <a href="mailto:">adresse@mail.com</a>
-      <a href="#">Google&nbsp;Scholar</a>
-      <a href="#">ORCID</a>
-      <a href="#">Curriculum&nbsp;Vitae&nbsp;(PDF)</a>
+      <a href="mailto:chloe.desvaux@inria.fr">chloe.desvaux@inria.fr</a>
+      <a href="mailto:chloe.desvaux@u-bordeaux.fr">chloe.desvaux@u-bordeaux.fr</a>
+      <a href="https://www.linkedin.com/in/chlo%C3%A9-desvaux-535409224/" target="_blank">LinkedIn</a>
+      <a href="./asset/pdf/desvaux_cv.pdf" class="pdf-link" target="_blank">Curriculum&nbsp;Vitae&nbsp;(PDF)</a>
     </div>
   </section>
 
@@ -52,197 +52,236 @@
         <section class="block" id="about">
           <div class="block-head"><span class="num">01</span><h2>About</h2></div>
           <div class="prose">
-            <p class="lead"><span class="drop">I am a third-year PhD candidate</span> in cognitive science, based in the education research group at the University of Placeholder. My work sits at the intersection of metacognition, motivation and instructional design.</p>
-            <p>Broadly, I ask how students come to regulate their own learning: how they set goals, choose strategies, judge whether something is working, and change course when it is not. I combine classroom field studies with controlled experiments and fine-grained process data — think log files, think-aloud protocols, and self-report traces collected over time.</p>
-            <p>Beyond the lab, I care about translating this work into practice, and I write and speak regularly for teachers, students and the wider public. A short summary of my research, teaching and outreach follows; my full CV is available <a href="#">as a PDF</a>.</p>
+            <p class="lead"><span class="drop">I'm a 3rd year PhD student</span> currently working in the FlowersAI &amp; CogSci lab at the INRIA research institute in Bordeaux (France). My thesis project focuses on the development and evaluation of school interventions to promote curiosity-driven learning in primary to middle school children, by leveraging metacognition.</p>
+            <p>In this work, we adopt a systemic approach towards school, specifically including teachers for participatory design of our interventions.</p>
+            <p class="eyebrow" style="margin-top: 1.5rem">Keywords</p>
+            <p>Curiosity · Education · Learning · Creativity · Metacognition · Children · EdTech</p>
           </div>
         </section>
 
         <section class="block" id="background">
-          <div class="block-head"><span class="num">02</span><h2>Academic background</h2></div>
+          <div class="block-head"><span class="num">02</span><h2>Education</h2></div>
           <div class="timeline">
             <div class="tl-item">
               <div class="tl-year">2023 — now</div>
               <div class="tl-body">
                 <h3>PhD, Cognitive Science</h3>
-                <div class="where">University of Placeholder · Education &amp; Learning Sciences Lab</div>
-                <div class="detail">Dissertation: <span style="font-style: italic">Adaptive self-regulation in everyday classroom learning.</span> Advised by Prof. A. Placeholder.</div>
+                <div class="where">University of Bordeaux · FlowersAI &amp; CogSci Lab, INRIA Research Institute · Bordeaux, FR</div>
               </div>
             </div>
             <div class="tl-item">
               <div class="tl-year">2021 — 2023</div>
               <div class="tl-body">
-                <h3>MSc, Cognitive &amp; Educational Psychology</h3>
-                <div class="where">University of Placeholder</div>
-                <div class="detail">Thesis on metacognitive monitoring during self-paced study. Graduated with distinction.</div>
+                <h3>Master's degree, Cognitive Science</h3>
+                <div class="where">University of Bordeaux · Bordeaux, FR</div>
               </div>
             </div>
             <div class="tl-item">
-              <div class="tl-year">2018 — 2021</div>
+              <div class="tl-year">2017 — 2021</div>
               <div class="tl-body">
-                <h3>BSc, Psychology</h3>
-                <div class="where">University of Placeholder</div>
-                <div class="detail">Minor in statistics and research methods.</div>
+                <h3>Dual bachelor's degree, Psychology &amp; Biology</h3>
+                <div class="where">University of Poitiers · Poitiers, FR</div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="block" id="publications">
-          <div class="block-head"><span class="num">03</span><h2>Publications</h2></div>
-          <ol class="pubs">
-            <li>
-              <div class="pub-year">2026</div>
-              <div class="pub-main">
-                <p class="pub-title">Monitoring without feedback: how learners calibrate effort across a semester</p>
-                <p class="pub-authors"><span class="me">Marchand, É.</span>, Dubois, R., &amp; Klein, S.</p>
-                <p class="pub-venue"><span style="font-style: italic">Journal of Educational Psychology</span> · in press</p>
-                <div class="pub-links"><a href="#">PDF</a><a href="#">DOI</a><a href="#">Data &amp; code</a></div>
-              </div>
-            </li>
-            <li>
-              <div class="pub-year">2025</div>
-              <div class="pub-main">
-                <p class="pub-title">A process model of strategy switching in self-regulated learning<span class="tag">Open access</span></p>
-                <p class="pub-authors"><span class="me">Marchand, É.</span>, &amp; Placeholder, A.</p>
-                <p class="pub-venue"><span style="font-style: italic">Cognition &amp; Instruction</span>, 43(2), 188–214</p>
-                <div class="pub-links"><a href="#">PDF</a><a href="#">DOI</a><a href="#">OSF</a></div>
-              </div>
-            </li>
-            <li>
-              <div class="pub-year">2024</div>
-              <div class="pub-main">
-                <p class="pub-title">Do study prompts help? A classroom field experiment with secondary students</p>
-                <p class="pub-authors">Klein, S., <span class="me">Marchand, É.</span>, &amp; Dubois, R.</p>
-                <p class="pub-venue"><span style="font-style: italic">Learning and Instruction</span>, 91, 101—117</p>
-                <div class="pub-links"><a href="#">PDF</a><a href="#">DOI</a></div>
-              </div>
-            </li>
-            <li>
-              <div class="pub-year">2023</div>
-              <div class="pub-main">
-                <p class="pub-title">Measuring self-regulated learning from trace data: a methodological review</p>
-                <p class="pub-authors"><span class="me">Marchand, É.</span></p>
-                <p class="pub-venue"><span style="font-style: italic">Educational Research Review</span>, 38, 100—125</p>
-                <div class="pub-links"><a href="#">PDF</a><a href="#">DOI</a><a href="#">Preprint</a></div>
-              </div>
-            </li>
-          </ol>
-        </section>
-
-        <section class="block" id="talks">
-          <div class="block-head"><span class="num">04</span><h2>Conferences &amp; talks</h2></div>
+        <section class="block" id="experience">
+          <div class="block-head"><span class="num">03</span><h2>Research &amp; teaching experience</h2></div>
           <ul class="entries">
             <li>
-              <div class="e-year">2026</div>
+              <div class="e-year">2024—25</div>
               <div class="e-main">
-                <div class="e-title">Adaptive self-regulation in everyday learning <span class="tag">Invited</span></div>
-                <div class="e-sub">Paper talk · <span style="font-style: italic">EARLI SIG 16 — Metacognition</span>, Lisbon</div>
+                <div class="e-title">Teaching Assistant</div>
+                <div class="e-sub">Cognitive Science department, University of Bordeaux · Master's degree course on project management in IT · September — November 2024 &amp; 2025</div>
               </div>
             </li>
             <li>
               <div class="e-year">2025</div>
               <div class="e-main">
-                <div class="e-title">Strategy switching, measured moment-to-moment</div>
-                <div class="e-sub">Symposium · <span style="font-style: italic">AERA Annual Meeting</span>, Denver</div>
-              </div>
-            </li>
-            <li>
-              <div class="e-year">2024</div>
-              <div class="e-main">
-                <div class="e-title">When do study prompts backfire?</div>
-                <div class="e-sub">Poster · <span style="font-style: italic">Cognitive Science Society (CogSci)</span>, Rotterdam</div>
-              </div>
-            </li>
-            <li>
-              <div class="e-year">2024</div>
-              <div class="e-main">
-                <div class="e-title">Tracing self-regulation in the wild</div>
-                <div class="e-sub">Lightning talk · <span style="font-style: italic">JURE / EARLI</span>, Graz</div>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <section class="block" id="teaching">
-          <div class="block-head"><span class="num">05</span><h2>Teaching</h2></div>
-          <ul class="entries">
-            <li>
-              <div class="e-year">2024—25</div>
-              <div class="e-main">
-                <div class="e-title">Learning Sciences &amp; Instructional Design</div>
-                <div class="e-sub">Teaching assistant · MSc seminar · designed and led weekly labs (~30 students)</div>
-              </div>
-            </li>
-            <li>
-              <div class="e-year">2023—25</div>
-              <div class="e-main">
-                <div class="e-title">Introduction to Research Methods &amp; Statistics</div>
-                <div class="e-sub">Teaching assistant · undergraduate · R tutorials and grading</div>
+                <div class="e-title">Teaching Assistant</div>
+                <div class="e-sub">Cognitive Science department, University of Bordeaux · Bachelor's degree course on web accessibility · January — March 2025</div>
               </div>
             </li>
             <li>
               <div class="e-year">2023</div>
               <div class="e-main">
-                <div class="e-title">Guest lecture — Metacognition in the classroom</div>
-                <div class="e-sub">BSc Psychology of Education · one-off lecture</div>
+                <div class="e-title">Research Intern</div>
+                <div class="e-sub">FlowersAI &amp; CogSci Lab, INRIA Research Institute · Bordeaux, FR · February — June 2023</div>
+                <div class="detail" style="margin-top: 0.5rem">Collaboration on an applied research project implementing a metacognitive digital intervention to foster curiosity-driven learning in primary school children. Supervisors: R. Abdelghani, PhD ; H. Sauzéon, Pr.</div>
+              </div>
+            </li>
+            <li>
+              <div class="e-year">2022</div>
+              <div class="e-main">
+                <div class="e-title">Research Intern</div>
+                <div class="e-sub">BPH Lab, Inserm U1219 · Bordeaux, FR · April — May 2022</div>
+                <div class="detail" style="margin-top: 0.5rem">Systematic literature review on the use of virtual reality in the domain of industrial architectural design in ergonomics. Supervisor: S. Morélot, PhD</div>
+              </div>
+            </li>
+            <li>
+              <div class="e-year">2021</div>
+              <div class="e-main">
+                <div class="e-title">Research Intern</div>
+                <div class="e-sub">CeRCA Lab, CNRS UMR7295 · Poitiers, FR · May — July 2021</div>
+                <div class="detail" style="margin-top: 0.5rem">Collaboration on evaluating user experience e.g. visual complexity of web pages, with the use of physiological measures, such as heart rate and eye tracking. Supervisor: N. Louveton, Pr.</div>
               </div>
             </li>
           </ul>
         </section>
 
-        <section class="block" id="writing">
-          <div class="block-head"><span class="num">06</span><h2>Informal writing &amp; outreach</h2></div>
-          <div class="writing">
-            <a class="wr" href="#">
-              <div>
-                <div class="wr-title">How to study when nobody is watching<span class="arr">↗</span></div>
-                <div class="wr-desc">A plain-language guide to self-regulated learning for students, with five things that actually work.</div>
-              </div>
-              <div class="wr-meta"><span class="wr-kind">Blog</span><div class="wr-pub">Personal · 2026</div></div>
-            </a>
-            <a class="wr" href="#">
-              <div>
-                <div class="wr-title">“Metacognition isn't a buzzword”<span class="arr">↗</span></div>
-                <div class="wr-desc">Interview on what learning science can and can't tell teachers right now.</div>
-              </div>
-              <div class="wr-meta"><span class="wr-kind">Interview</span><div class="wr-pub">The Learning Podcast</div></div>
-            </a>
-            <a class="wr" href="#">
-              <div>
-                <div class="wr-title">A field guide to study strategies that don't work<span class="arr">↗</span></div>
-                <div class="wr-desc">Why highlighting and re-reading feel productive — and what to do instead.</div>
-              </div>
-              <div class="wr-meta"><span class="wr-kind">Science outreach</span><div class="wr-pub">Placeholder Magazine</div></div>
-            </a>
-            <a class="wr" href="#">
-              <div>
-                <div class="wr-title">Notes from the classroom: what I learned running a field study<span class="arr">↗</span></div>
-                <div class="wr-desc">Honest reflections on doing research with real teachers and real teenagers.</div>
-              </div>
-              <div class="wr-meta"><span class="wr-kind">Essay</span><div class="wr-pub">Personal · 2025</div></div>
-            </a>
+        <section class="block" id="publications">
+          <div class="block-head"><span class="num">04</span><h2>Publications &amp; communications</h2></div>
+
+          <div class="block-sub">
+            <h3>Scientific publications &amp; communications</h3>
+            <ol class="pubs">
+              <li>
+                <div class="pub-year">—</div>
+                <div class="pub-main">
+                  <p class="pub-title">Metacognitive training of children's curiosity in schools: investigating a teacher-directed intervention</p>
+                  <p class="pub-authors"><span class="me">Desvaux, C.</span>, Oudeyer, P.-Y., &amp; Sauzéon, H.</p>
+                  <p class="pub-venue">Under review</p>
+                </div>
+              </li>
+              <li>
+                <div class="pub-year">2026</div>
+                <div class="pub-main">
+                  <p class="pub-title">Curiosity and Metacognition: Towards a Unified Framework for Learning and Education in the Age of AI</p>
+                  <p class="pub-authors"><span class="me">Desvaux, C.</span>, Abdelghani, R., Sauzéon, H. &amp; Oudeyer, P.-Y.</p>
+                  <p class="pub-venue">In J. Lockman &amp; A. Warlaumont (Eds.), <span style="font-style: italic">Advances in Child Development and Behavior</span> · Under publication</p>
+                  <div class="pub-links"><a href="https://arxiv.org/pdf/2604.25648" class="pdf-link" target="_blank">Pre-print</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="pub-year">2026</div>
+                <div class="pub-main">
+                  <p class="pub-title">Teaching Students to Question the Machine: An AI Literacy Intervention Improves Students Regulation of LLM Use in a Science Task</p>
+                  <p class="pub-authors">Clerc, O., Abdelghani, R., <span class="me">Desvaux, C.</span>, Poisson, E., Oudeyer, P.-Y., &amp; Sauzéon, H.</p>
+                  <p class="pub-venue">ALIT4ALL, AIED'26 · Seoul, KR</p>
+                  <div class="pub-links">
+                    <a href="https://arxiv.org/pdf/2604.01955" class="pdf-link" target="_blank">Pre-print</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pub-year">2023</div>
+                <div class="pub-main">
+                  <p class="pub-title">Interactive environments for training children's curiosity through the practice of metacognitive skills: A pilot study</p>
+                  <p class="pub-authors">Abdelghani, R., Law, E., <span class="me">Desvaux, C.</span>, Oudeyer, P.-Y., &amp; Sauzéon, H.</p>
+                  <p class="pub-venue">IDC'23, 495–501</p>
+                  <div class="pub-links">
+                    <a href="https://doi.org/10.1145/3585088.3593880" target="_blank">DOI</a>
+                  </div>
+                  <div class="pub-doi">
+                    <p>DOI 10.1145/3585088.3593880</p>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="block-sub">
+            <h3>Oral presentations</h3>
+            <ul class="entries">
+              <li>
+                <div class="e-year">2026</div>
+                <div class="e-main">
+                  <div class="e-title">Teacher-led metacognitive training of children's curiosity in schools</div>
+                  <div class="e-sub"><span class="me">Desvaux, C.</span>, Sauzéon, H. &amp; Oudeyer, P.-Y. · EARLI SIG 16 Conference · Clermont-Ferrand, FR</div>
+                </div>
+              </li>
+              <li>
+                <div class="e-year">2025</div>
+                <div class="e-main">
+                  <div class="e-title">Curiosity as a ZPD window for self-regulated learning</div>
+                  <div class="e-sub"><span class="me">Desvaux, C.</span>, Sauzéon, H. &amp; Oudeyer, P.-Y. · ISCAR Southern Europe and Middle East Conference · Barcelona, ES</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="block-sub">
+            <h3>Posters</h3>
+            <ul class="entries">
+              <li>
+                <div class="e-year">2024</div>
+                <div class="e-main">
+                  <div class="e-title">Kids Reflect: a digital metacognitive training for curiosity-driven learning</div>
+                  <div class="e-sub">
+                    <p><span class="me">Desvaux, C.</span>, Abdelghani, R., Sauzéon, H. &amp; Oudeyer, P.-Y. · Scientific Seminar for Junior Researchers in Education · 3–5 July · CNRS UMR7295, Poitiers, FR</p>
+                  </div>
+                  <div class="pub-links">
+                    <a href="./asset/pdf/desvaux_poster.pdf" class="pdf-link" target="_blank">Voir</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
 
+        <section class="block" id="outreach">
+          <div class="block-head"><span class="num">05</span><h2>Science outreach</h2></div>
+          <ul class="entries">
+            <li>
+              <div class="e-year">2025</div>
+              <div class="e-main">
+                <div class="e-title">Interview — Use of digital tools for learning in the classroom</div>
+                <div class="e-sub">Curieux ! Live Media · 23 October 2025</div>
+              </div>
+            </li>
+            <li>
+              <div class="e-year">2025</div>
+              <div class="e-main">
+                <div class="e-title">Interactive talk — Curiosity and metacognition in the classroom</div>
+                <div class="e-sub">Cogni'Classes, AFSC Association · 15 October 2025</div>
+              </div>
+            </li>
+            <li>
+              <div class="e-year">2025</div>
+              <div class="e-main">
+                <div class="e-title">Talk and workshop — Learning to learn with curiosity</div>
+                <div class="e-sub">Learning Show, Canopé Network × INRIA Academy · Rennes, FR · 13 October 2025</div>
+              </div>
+            </li>
+            <li>
+              <div class="e-year">2025</div>
+              <div class="e-main">
+                <div class="e-title">Workshop — Learning to learn with curiosity in the age of genAI</div>
+                <div class="e-sub">Academic Day for Innovation, Canopé Network, Academy of Poitiers · 28 August 2025</div>
+              </div>
+            </li>
+            <li>
+              <div class="e-year">2025</div>
+              <div class="e-main">
+                <div class="e-title">Talk — Learning to learn with curiosity in the age of genAI</div>
+                <div class="e-sub">INSPE, University of Bordeaux · 13 March 2025</div>
+              </div>
+            </li>
+            <li>
+              <div class="e-year">2024</div>
+              <div class="e-main">
+                <div class="e-title">Presentation and workshop — Learning to learn with curiosity</div>
+                <div class="e-sub">École Académique de la Formation Continue (EAFC) · Paris, FR · 17 &amp; 19 December 2024</div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
         <section class="block" id="beyond">
-          <div class="block-head"><span class="num">07</span><h2>Beyond research</h2></div>
+          <div class="block-head"><span class="num">06</span><h2>Extracurricular &amp; summer programs</h2></div>
           <div class="beyond">
             <div class="by-item">
-              <h3>Science communication</h3>
-              <p>Volunteer with a local programme bringing hands-on cognitive science demos into secondary schools.</p>
+              <h3>Hacking Cognition</h3>
+              <p>Led by Laura Dugué, Pr. · Paris Cité University, CNRS · July 2022. Hackathon in Cognitive Science. Project topic: <span style="font-style: italic">Uncooked</span> — a web extension to help the user identify fake news and enhance vigilance on sensationalist headlines.</p>
             </div>
             <div class="by-item">
-              <h3>Open science</h3>
-              <p>Co-organise a departmental reproducibility reading group; advocate for pre-registration in education research.</p>
+              <h3>Disrupt Campus program</h3>
+              <p>University of Bordeaux · January — June 2022. Project management program for innovation and digital transformation.</p>
             </div>
             <div class="by-item">
-              <h3>Mentoring</h3>
-              <p>Mentor first-generation undergraduates navigating research and graduate-school applications.</p>
-            </div>
-            <div class="by-item">
-              <h3>Off the clock</h3>
-              <p>Long-distance running, film photography, and an ongoing and unreasonable interest in fountain pens.</p>
+              <h3>Cognitive Science Forum</h3>
+              <p>Cognitive Science Association, Île-de-France · 2023, 2024, 2025</p>
             </div>
           </div>
         </section>
@@ -258,12 +297,11 @@
           <p class="toc-title">Sections</p>
           <nav id="toc-nav">
             <a href="#about"><span class="n">01</span>About</a>
-            <a href="#background"><span class="n">02</span>Academic background</a>
-            <a href="#publications"><span class="n">03</span>Publications</a>
-            <a href="#talks"><span class="n">04</span>Conferences &amp; talks</a>
-            <a href="#teaching"><span class="n">05</span>Teaching</a>
-            <a href="#writing"><span class="n">06</span>Informal writing</a>
-            <a href="#beyond"><span class="n">07</span>Beyond research</a>
+            <a href="#background"><span class="n">02</span>Education</a>
+            <a href="#experience"><span class="n">03</span>Research &amp; teaching</a>
+            <a href="#publications"><span class="n">04</span>Publications &amp; communications</a>
+            <a href="#outreach"><span class="n">05</span>Science outreach</a>
+            <a href="#beyond"><span class="n">06</span>Extracurricular</a>
           </nav>
         </div>
       </aside>
@@ -273,17 +311,24 @@
 
   <div class="shell">
     <footer class="colophon">
-      <div class="cta">
-        <p>Get in touch —</p>
-        <a href="mailto:">say hello</a>
-      </div>
       <div class="fine">
-        <p>Chloé DESVAUX · University of Bordeaux
-        <span>Designed for clarity · Set in Newsreader &amp; IBM Plex Mono</span>
-        © 2026</p>
+        <p>Chloé DESVAUX · FlowersAI &amp; CogSci Lab, INRIA · University of Bordeaux
+        <span>© 2026</span></p>
       </div>
     </footer>
   </div>
 
+  <!-- poster modale -->
+  <div class="pdf-modal" id="pdfModal">
+    <div class="pdf-modal-content">
+      <button class="pdf-modal-close" id="pdfModalClose">×</button>
+
+      <iframe 
+        id="pdfFrame" 
+        src="" 
+        title="PDF Viewer"
+      ></iframe>
+    </div>
+  </div>
 </body>
 </html>
